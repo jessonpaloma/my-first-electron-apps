@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Crypto App</title>
+    <link rel="stylesheet" href="../css/photon.min.css">
+    <link rel="stylesheet" href="../css/photon.css">
+    <!-- https://electronjs.org/docs/tutorial/security#csp-meta-tag -->
+    <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline';" />
+    
+  </head>
+  <body>
+
+
+
+
+    <div class="window">
+        <div class="window-content">
+          <div class="pane-group">
+            <div class="pane-sm sidebar">
+
+                <nav class="nav-group">
+                    <h5 class="nav-group-title">Functions</h5>
+                    <a class="nav-group-item active" style="cursor:pointer;">
+                      <span class="icon icon-home"></span>
+                      Home
+                    </a>
+                   
+
+                    <span class="nav-group-item">
+                      <a href="" id="capBtn" style="cursor:pointer;text-decoration: none; color:black;"><span class="icon icon-alert" ></span>
+                      Coin Market Cap</a> 
+                    </span>
+
+                    <span class="nav-group-item">
+                     <a href="" id="exitBtn" style="cursor:pointer;text-decoration: none; color:black;"><span class="icon icon-logout"></span>
+                     Exit</a> 
+                    </span>
+                    
+                    
+                   
+
+
+
+
+                    
+                  <br>
+                    <span class="nav-group-item">
+                        <button class="btn btn-warning" id="notifyBtn" style="border-radius:0px;">Notify Me When</button>
+                   
+                    </span>
+
+                    <br>
+
+                
+                   
+                  </nav>
+
+
+            </div> <!--- end of pane-sm sidebar -->
+
+
+            <div class="pane">
+              <p style="margin-left:20px;"><span class="icon icon-up-circled"></span><span id="targetPrice"> Choose</span></p>
+              <div style="background-image: url(../img/chart3.png) ; background-size: 100% 100%; background-repeat: no-repeat;background-attachment: fixed;opacity: 0.3 ;width: 100%;height: 100% ;position: absolute; "></div>
+               
+                <div id="price-container" style="margin-top:150px;position: absolute;margin-left: 43%;">
+                    <p class="subtext" style="color:black"> Current BTC USD</p>
+                    <h1 id="price">Loading..</h1>
+                 </div>
+                
+
+            </div>
+          </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+<script src="../js/index.js"></script>
+
+    
+  </body>
+</html>
