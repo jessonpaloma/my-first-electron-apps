@@ -33,7 +33,7 @@ function createWindow () {
   win.loadFile('src/index.html')
 
   // Open the DevTools.
- webContents.openDevTools()
+ //webContents.openDevTools()
 }
 
 // This method will be called when Electron has finished
