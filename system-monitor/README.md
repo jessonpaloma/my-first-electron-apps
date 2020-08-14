@@ -6,6 +6,6 @@ Develop by: Jesson Paloma </br>
 Instruction:
 Download and run this app on your Computer
 
-![Image of Yaktocat](https://i.ibb.co/mCNhh3M/system-monitoring.jpg)
+![Image of Yaktocat](https://i.ibb.co/zNqC4m4/newsr.jpg)
 
 
