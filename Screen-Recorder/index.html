@@ -3,25 +3,53 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Hello Bulma!</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.0/css/bulma.min.css">
+    <title>Kokow - Screen Recorder</title>
+    <link rel="stylesheet" href="css/photon.min.css">
+    <link rel="stylesheet" href="css/photon.css">
     <script defer  src="js/renderer.js"></script>
   </head>
-  <body>
-  <section class="section">
-    <div class="container">
-      <h2 class="title">
-        Electron Screen Recorder
-      </h2>
-     <video></video>
-     <button id="startBtn" class="button is-primary">Start</button>
-     <button id="stopBtn" class="button is-danger">Stop</button>
-     <hr>
+  <body >
 
-     <button id = "videoSelectBtn" class="button is-text">Choose a video source</button>
+
+
+    <div class="window" style="background-color: #1b2931;" >
+      <div class="window-content">
+        <div class="pane-group" >
+
+          <div class="pane-sm sidebar" style="background-color: #2a333c;">
+            <center>
+              <br><br>
+            <button id = "videoSelectBtn" class="button is-text" style="color:gray; background-color:white;border:none; border-radius:0px;">Choose a video source</button> <br><br>
+            <button id="startBtn" class="btn btn-large " style="color:white; background-color:#ff9900;border:none; border-radius:0px;"> START </button>
+            <button id="stopBtn" class="btn btn-large " style="color:white;background-color:#ff2863;border:none; border-radius:0px;"> STOP</button>
+            
+          </center>
+        </div>
+
+
+          <div class="pane">
+          
+            <img src="img/cam.svg" alt="" style="position: absolute; width: 100px; margin-top: 30%;margin-left: 45%;">
+            <video style="position: absolute; z-index: 1;"></video>
+          
+          </div>
+        </div>
+      </div>
     </div>
-  </section>
 
+
+
+
+
+
+
+
+
+
+
+
+
+ 
 
   </body>
 </html>

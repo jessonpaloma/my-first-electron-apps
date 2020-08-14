@@ -1,4 +1,4 @@
-const { app, BrowserWindow } = require('electron')
+const { app, BrowserWindow, Menu } = require('electron')
 
 let win
 
@@ -7,6 +7,8 @@ function createWindow () {
   const win = new BrowserWindow({
     width: 800,
     height: 600,
+   
+   
     webPreferences: {
       nodeIntegration: true
     }
@@ -18,6 +20,7 @@ function createWindow () {
   // Open the DevTools.
   //win.webContents.openDevTools()
 }
+Menu.setApplicationMenu(null)
 
 // This method will be called when Electron has finished
 // initialization and is ready to create browser windows.
