@@ -5,8 +5,18 @@ let win
 function createWindow () {
   // Create the browser window.
   const win = new BrowserWindow({
-    width: 800,
-    height: 600,
+    width: 60,
+    height: 400,
+    backgroundColor: "#ffffff",
+    transparent: true, 
+   frame: false,
+    resizable: false,
+    dragable:true,
+    backgroundColor: '#2a333c',
+    x: 1270,
+    y:100,
+    
+   
    
    
     webPreferences: {
@@ -15,13 +25,15 @@ function createWindow () {
   })
 
   // and load the index.html of the app.
-  win.loadFile('index.html')
+  win.loadFile('picker.html')
+  win.isMovable(true)
 
   // Open the DevTools.
   //win.webContents.openDevTools()
 }
 Menu.setApplicationMenu(null)
 
+//win.setResizable(false);
 // This method will be called when Electron has finished
 // initialization and is ready to create browser windows.
 // Some APIs can only be used after this event occurs.
